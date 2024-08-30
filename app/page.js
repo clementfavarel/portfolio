@@ -83,9 +83,9 @@ export default function Home() {
             </a>
           </div>
           <p className="text-gray-400 text-lg tracking-wide mt-9">
-            Bonjour, moi c'est Clément, développeur web doté de 2 ans
-            d'expérience en React, PHP, MySQL et Docker. Construisons ensemble
-            des solutions web performantes.
+            Grâce à mes 2 ans d'expérience en React, PHP, MySQL, Docker et bien
+            d'autres, je suis capable de créer des solutions numériques adaptées
+            à vos besoins.
           </p>
         </div>
         <hr className="my-5 opacity-30"></hr>
