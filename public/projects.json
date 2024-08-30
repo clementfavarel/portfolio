@@ -1,0 +1,137 @@
+[
+  {
+    "id": "1",
+    "images": [],
+    "title": "SKELETOR",
+    "description": "Application web servant de modèle pour les projets web créés par les développeurs de la Marine nationale.",
+    "fullDescription": "SKELETOR est un site web minimaliste réalisé grâce au framework fullstack Laravel basé sur le langage PHP. Ce site web minimaliste a pour rôle de servir de template pour toutes les sites web réalisés par les développeurs du FANL@b de la Marine nationale.",
+    "technologies": [
+      "Laravel PHP",
+      "MariaDB",
+      "Laravel/Sail (Docker)",
+      "Tailwind CSS"
+    ],
+    "concepts": [
+      "Utilisation d'un framework fullstack",
+      "Utilisation des méthodes C.R.U.D.",
+      "Système de connexion et inscription complet",
+      "Création d'un système de rôles et permissions",
+      "Conteneurisation du logiciel",
+      "Appels vers une API externe"
+    ],
+    "githubLink": "https://github.com/Gitfanlab/skeletor",
+    "liveLink": ""
+  },
+  {
+    "id": "2",
+    "images": [],
+    "title": "GRAB CEPHISMER",
+    "description": "Application de gestion des réservations des actions pour bouteilles de plongée destinée au CEPHISMER.",
+    "fullDescription": "GRAB est un site web réalisé grâce au framework ExpressJS basé sur le langage JavaScript. Ce site web a pour rôle de gérer les réservations des actions pour les bouteilles de plongée de l'opérateur de la station du CEPHISMER de la Marine nationale.",
+    "technologies": ["Pug", "Express", "NodeJS", "MariaDB", "Docker"],
+    "concepts": [
+      "Utilisation d'un framework fullstack",
+      "Utilisation des méthodes C.R.U.D.",
+      "Système de connexion",
+      "Création d'un système de rôles",
+      "Conteneurisation du logiciel"
+    ],
+    "githubLink": "https://github.com/Gitfanlab/grab_cephismer",
+    "liveLink": ""
+  },
+  {
+    "id": "3",
+    "images": [],
+    "title": "App Démineur",
+    "description": "Application de calcul divers servant à compléter un journal d'opération. Application destinée au GPD-Med.",
+    "fullDescription": "App Démineur est une application mobile Android réalisée grâce au framework React Native. Cette application a pour rôle de calculer les paramètres de déminage et de les enregistrer pour en faire un journal d'opération pour les démineurs du GPD-Med de la Marine nationale.",
+    "technologies": ["React Native", "Expo"],
+    "concepts": ["Utilisation d'un framework mobile"],
+    "githubLink": "https://github.com/Gitfanlab/Appli_GPD",
+    "liveLink": ""
+  },
+  {
+    "id": "4",
+    "images": [
+      {
+        "src": "/img/siac-1.png",
+        "alt": "Siac Homepage"
+      },
+      {
+        "src": "/img/siac-2.png",
+        "alt": "Siac Map"
+      }
+    ],
+    "title": "SIAC 2024",
+    "description": "Application web guide pour la visite du salon international d'art contemporain de Marseille 2024. Réalisée dans le cadre d'un projet à l'IUT MMI Toulon",
+    "fullDescription": "SIAC24 est une application web réalisée grâce au langage PHP et notamment grâce à du PHP orienté objet. Cette application a pour rôle de guider les visiteurs du salon international d'art contemporain de Marseille 2024 en leur proposant un plan 3D du salon, ainsi qu'une description des artistes et de leurs oeuvres.",
+    "technologies": ["JavaScript", "PHP Objet", "3D", "Docker", "MySQL"],
+    "concepts": [
+      "Système de connexion et inscription",
+      "Intégration de medias 3D dans l'application",
+      "Conteneurisation du logiciel"
+    ],
+    "githubLink": "https://github.com/Gitfanlab/grab_cephismer",
+    "liveLink": ""
+  },
+  {
+    "id": "5",
+    "images": [
+      {
+        "src": "/img/digihub-1.png",
+        "alt": "Digihub Homepage"
+      },
+      {
+        "src": "/img/digihub-2.png",
+        "alt": "Digihub Login"
+      },
+      {
+        "src": "/img/digihub-3.png",
+        "alt": "Digihub Register"
+      }
+    ],
+    "title": "Digihub",
+    "description": "Application de librairie en ligne de films et séries à l'image de Disney+, Netflix, etc. Réalisée dans le cadre d'un projet à l'IUT MMI Toulon.",
+    "fullDescription": "Digihub est une application web réalisée grâce au langage PHP et notamment grâce à du PHP orienté objet. Cette application a pour rôle de proposer aux utilisateurs une librairie de films et séries en ligne. Les utilisateurs peuvent s'inscrire, se connecter, consulter des films et séries depuis un catalogue et les ajouter à leur liste de favoris.",
+    "technologies": ["SASS", "JavaScript", "PHP", "MySQL"],
+    "concepts": [
+      "Utilisation du la programmation orientée objet",
+      "Utilisation des méthodes C.R.U.D.",
+      "Système de connexion et inscription",
+      "Appels vers une API externe"
+    ],
+    "githubLink": "https://github.com/Gitfanlab/grab_cephismer",
+    "liveLink": ""
+  },
+  {
+    "id": "6",
+    "images": [
+      {
+        "src": "/img/orasis-1.png",
+        "alt": "Orasis Homepage"
+      },
+      {
+        "src": "/img/orasis-2.png",
+        "alt": "Orasis Menu"
+      },
+      {
+        "src": "/img/orasis-3.png",
+        "alt": "Orasis Calendar"
+      },
+      {
+        "src": "/img/orasis-4.png",
+        "alt": "Orasis Footer"
+      }
+    ],
+    "title": "Orasis 2023",
+    "description": "Site web vitrine pour le colloque Orasis 2023. Réalisé dans le cadre d'un projet à l'IUT MMI Toulon.",
+    "fullDescription": "Orasis23 est un site web réalisé grâce au langage PHP et notamment grâce à du PHP orienté objet. Ce site web a pour rôle de présenter le colloque Orasis 2023. Les visiteurs peuvent consulter le programme, les intervenants, les partenaires et s'inscrire au colloque.",
+    "technologies": ["JavaScript", "PHP Objet", "MySQL"],
+    "concepts": [
+      "Utilisation du la programmation orientée objet",
+      "Création d'un système de rôles et permissions"
+    ],
+    "githubLink": "https://github.com/Gitfanlab/grab_cephismer",
+    "liveLink": ""
+  }
+]

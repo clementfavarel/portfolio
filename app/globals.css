@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0b0b0b !important;
+  background-image: radial-gradient(hsla(0, 0%, 100%, 0.275) 1px, #0b0b0b 0);
+  background-size: 2rem 2rem;
+}
+
+.slide-in-bottom {
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.marker {
+  position: relative;
+  display: inline-block;
+}
+.marker::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 190px;
+  height: 14px;
+  transform: skew(-12deg) translateX(-50%);
+  background: #5c6cff;
+  z-index: -1;
+}
+
+@media (max-width: 640px) {
+  .marker::before {
+    width: 150px;
+  }
+}
+
+.bg-darkTwo {
+  background-color: rgb(51 54 57);
+}
+.text-darkTwo {
+  color: rgb(51 54 57);
+}
+
+.rs-timeline {
+  direction: ltr;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+.rs-timeline-item {
+  position: relative;
+  text-align: left;
+}
+.rs-timeline-item:not(:last-child) .rs-timeline-item-content {
+  padding-bottom: 18px;
+}
+.rs-timeline-item-dot {
+  position: absolute;
+  top: 5px;
+}
+.rs-timeline-item-dot:before {
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+}
+.rs-timeline-item-custom-dot {
+  text-align: center;
+}
+.rs-timeline-item-custom-dot:before {
+  display: none;
+}
+.rs-timeline-item-active .rs-timeline-item-dot:before {
+  background-color: #3498ff;
+}
+.rs-timeline-item-tail {
+  background-color: #d9d9d9;
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+.rs-timeline-item:first-child .rs-timeline-item-tail {
+  top: 5px;
+}
+.rs-timeline-item:last-child .rs-timeline-item-tail {
+  bottom: auto;
+  height: 15px;
+}
+.rs-timeline-endless .rs-timeline-item:last-child .rs-timeline-item-tail {
+  height: auto;
+  min-height: 38px;
+}
+.rs-timeline-item:only-child .rs-timeline-item-tail {
+  display: none;
+}
+.rs-timeline-align-left .rs-timeline-item-dot {
+  left: 0;
+}
+.rs-timeline-align-left .rs-timeline-item-tail {
+  left: 4px;
+}
+.rs-timeline-align-left .rs-timeline-item {
+  padding-left: 22px;
+}
+.rs-timeline-align-right .rs-timeline-item-dot {
+  right: 0;
+}
+.rs-timeline-align-right .rs-timeline-item-tail {
+  right: 4px;
+}
+.rs-timeline-align-right .rs-timeline-item {
+  padding-right: 22px;
+}
+.rs-timeline-align-right .rs-timeline-item-content {
+  text-align: right;
+}
+.rs-timeline-align-alternate .rs-timeline-item-dot {
+  left: calc(50% - 5px);
+}
+.rs-timeline-align-alternate .rs-timeline-item-tail {
+  left: calc(50% - 1px);
+}
+.rs-timeline-align-alternate .rs-timeline-item-content {
+  width: 50%;
+}
+.rs-timeline-align-alternate
+  .rs-timeline-item:nth-child(2n)
+  .rs-timeline-item-content,
+.rs-timeline-align-alternate .rs-timeline-item:nth-child(odd) {
+  text-align: right;
+}
+.rs-timeline-align-alternate
+  .rs-timeline-item:nth-child(odd)
+  .rs-timeline-item-content {
+  display: inline-block;
+  text-align: left;
+}
+.rs-timeline-with-time .rs-timeline-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+}
+.rs-timeline-with-time .rs-timeline-item-dot {
+  left: calc(50% - 5px);
+}
+.rs-timeline-with-time .rs-timeline-item-tail {
+  left: calc(50% - 1px);
+}
+.rs-timeline-with-time .rs-timeline-item-content,
+.rs-timeline-with-time .rs-timeline-item-time {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 50%;
+  flex: 1 0 50%;
+}
+@media (-ms-high-contrast: none), screen and (-ms-high-contrast: active) {
+  .rs-timeline-with-time .rs-timeline-item-content,
+  .rs-timeline-with-time .rs-timeline-item-time {
+    max-width: 50%;
+  }
+}
+.rs-timeline-align-alternate .rs-timeline-item:nth-child(2n),
+.rs-timeline-with-time.rs-timeline-align-right .rs-timeline-item {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.rs-timeline-with-time.rs-timeline-align-right .rs-timeline-item {
+  padding-right: 0;
+}
+.rs-timeline-with-time.rs-timeline-align-left .rs-timeline-item-time {
+  text-align: right;
+}
+.rs-timeline-with-time.rs-timeline-align-right .rs-timeline-item-time {
+  text-align: left;
+}
+.rs-timeline-align-alternate
+  .rs-timeline-item:nth-child(2n)
+  .rs-timeline-item-content,
+.rs-timeline-align-alternate
+  .rs-timeline-item:nth-child(odd)
+  .rs-timeline-item-time,
+.rs-timeline-with-time.rs-timeline-align-left .rs-timeline-item-time,
+.rs-timeline-with-time.rs-timeline-align-right .rs-timeline-item-content {
+  padding-right: 17px;
+}
+.rs-timeline-align-alternate
+  .rs-timeline-item:nth-child(2n)
+  .rs-timeline-item-time,
+.rs-timeline-align-alternate
+  .rs-timeline-item:nth-child(odd)
+  .rs-timeline-item-content,
+.rs-timeline-with-time.rs-timeline-align-left .rs-timeline-item-content,
+.rs-timeline-with-time.rs-timeline-align-right .rs-timeline-item-time {
+  padding-left: 17px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
